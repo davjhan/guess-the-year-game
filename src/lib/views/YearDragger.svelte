@@ -51,7 +51,7 @@
 <svelte:body on:mouseleave={handleDragExit} on:mousemove={handleMouseMove} on:mouseup={handleDragExit}
              on:touchend={handleDragExit}
              on:touchmove={handleMouseMove}/>
-<div class="{cl} flex flex-col flex-grow mx-8 ">
+<div class="{cl} flex flex-col flex-grow mx-4 ">
 
     <div class="relative">
         <span class='absolute -left-2 font-semibold text-sm'>{min}</span>
