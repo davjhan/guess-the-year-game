@@ -1,6 +1,6 @@
 # Guess The Year Game
 
-![Banner](./static/Link Preview.png)
+![Banner](static/Link%20Preview.png?raw=true)
 Made by : **David Han (@davjhan on github)**
 # Try it out!
 Play the game here: [`Guess The Year Game`](https://guess-the-year.davjhan.com/)
@@ -19,7 +19,7 @@ Generates a static app that is hosted on Netlify.
 `davjhan-core` includes common tailwind styles, css, and components (e.g. Navbar) that will be reused between david 
 games. I use `yalc link davjhan-core` on my local machine so that it builds.
 
-# Questions
+## Questions database
 I sourced Wikipedia to hand-compile a database of questions in Airtable. I then have a script, 
 `scripts/download-questions.
 ts`, that downloads the questions to a json file. It sits at 12kb for 120+ questions.
