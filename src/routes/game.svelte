@@ -54,7 +54,7 @@
 				break
 			case'review':
 				console.log(`year`, question)
-				livesLost = Math.abs(question.Year - guess)
+				livesLost = Math.abs(question.year - guess)
 				lives = Math.max(0, lives - (livesLost))
 				setTimeout(() => animatedLives.set(lives), 2500, {
 					duration: livesLost * 50
@@ -117,7 +117,7 @@
                      in:fly={{delay:500}}>
                     <label for='guess' class='text-base text-green-700'>Answer</label>
                     <span class='p-1 text-center w-20 appearance-none text-xl bg-secondary'>
-                      {question.Year}
+                      {question.year}
                 </span>
                 </div>
             {/if}

@@ -48,9 +48,9 @@ async function main() {
 			view: 'Grid view'
 		}).all()
 
-	// fixQuestionMarkdown(questions)
+//	fixQuestionMarkdown(questions)
 	const data = questions.map(it => ({
-		...it.fields,
+		year: it.fields.Year,
 		question: marked.parseInline(it.fields.question)
 	}))
 	fs.writeFile('static/questions.json', JSON.stringify(data), err => {
