@@ -130,10 +130,10 @@
         {:else}
             <div class="flex flex-col items-center">
                 <span class='font-semibold text-xl' in:fly={{delay:1500}}>Margin of error:
-                    <span class='bg-red-100 rounded px-2 py-1 font-bold'>{livesLost}</span>
+                    <span class='bg-red-100 rounded px-2 py-1 font-bold tabular-nums'>{livesLost}</span>
                     years</span>
                 <span class='font-semibold mt-4 text-sm' in:fly={{delay:2000}}>Lives remaining:
-                    <span class='bg-secondary rounded px-2 py-1 font-bold text-black'>
+                    <span class='bg-secondary rounded px-2 py-1 font-bold text-black tabular-nums'>
                         {$animatedLives}
                     </span>
                 </span>

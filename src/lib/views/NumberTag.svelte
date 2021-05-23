@@ -6,5 +6,5 @@
 
 <div class="flex items-center div rounded px-3 py-2 {cl}">
     <span class='font-semibold text-sm'>{label}</span>
-    <span class='text-sm font-bold ml-2'>{value}</span>
+    <span class='text-sm font-bold ml-2 tabular-nums'>{value}</span>
 </div>
