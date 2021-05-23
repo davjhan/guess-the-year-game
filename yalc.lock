@@ -1,9 +1,8 @@
 {
   "version": "v1",
   "packages": {
-    "davjhan-ui": {
-      "signature": "833a0d440144430864952fac35e109aa",
-      "file": true
+    "davjhan-core": {
+      "signature": "b0b0e9c79beab657d329883e7ef186cf"
     }
   }
 }

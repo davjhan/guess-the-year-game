@@ -1,38 +1,48 @@
-# create-svelte
+# Guess The Year Game
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte);
+![Banner](./static/Link Preview.png)
+Made by : **David Han (@davjhan on github)**
+# Try it out!
+Play the game here: [`Guess The Year Game`](https://guess-the-year.davjhan.com/)
 
-## Creating a project
+# Built with
+- [`Svelte Kit`](https://kit.svelte.dev/)
+- Tailwind CSS (JIT)
+- Netlify
 
-If you're seeing this, you've probably already done this step. Congrats!
+Generates a static app that is hosted on Netlify.
 
-```bash
-# create a new project in the current directory
-npm init svelte@next
+# Get Started
 
-# create a new project in my-app
-npm init svelte@next my-app
-```
+⚠️ This repo will not build by itself. It has a dependency on `davjhan-core` which is not published on npm.
 
-> Note: the `@next` is temporary
+`davjhan-core` includes common tailwind styles, css, and components (e.g. Navbar) that will be reused between david 
+games. I use `yalc link davjhan-core` on my local machine so that it builds.
 
-## Developing
+# Questions
+I sourced Wikipedia to hand-compile a database of questions in Airtable. I then have a script, 
+`scripts/download-questions.
+ts`, that downloads the questions to a json file. It sits at 12kb for 120+ questions.
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
+# Commands
+### Run the dev server
 ```bash
 npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
 ```
 
-## Building
+### Download the questions.json from Airtable database
+```bash
+npm run download-questions
+```
 
-Before creating a production version of your app, install an [adapter](https://kit.svelte.dev/docs#adapters) for your target environment. Then:
-
+### Build and preview
 ```bash
 npm run build
 ```
-
-> You can preview the built app with `npm run preview`, regardless of whether you installed an adapter. This should _not_ be used to serve your app in production.
+```bash
+npm run preview
+```
+### Deploy to Netlify
+```bash
+npm run deploy
+```
