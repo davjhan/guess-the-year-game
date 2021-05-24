@@ -1,6 +1,6 @@
 # Guess The Year Game
 
-![Banner](static/Link%20Preview.png?raw=true)
+![Banner](static/guess-the-year%20cover.png?raw=true)
 Made by : **David Han (@davjhan on github)**
 # Try it out!
 Play the game here: [`Guess The Year Game`](https://guess-the-year.davjhan.com/)

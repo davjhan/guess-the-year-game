@@ -9,6 +9,6 @@
     }
 </style>
 <div class="container max-w-screen-sm md:border-l md:border-r md:h-screen md:box-content border-gray-100 bg-background">
-    <Navbar subPath='Guess the year'/>
+    <Navbar subPath='Guess the year game'/>
     <slot/>
 </div>
