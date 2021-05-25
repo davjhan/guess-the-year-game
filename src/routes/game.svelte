@@ -76,7 +76,7 @@
 	}
 </script>
 
-<main class='px-4 flex flex-col w-full'>
+<main class='px-4 flex flex-col w-full mt-4'>
     <div class="flex self-end">
         {#key round}
             <div in:scale={{start :1.2, opacity:1}}>
