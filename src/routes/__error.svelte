@@ -1,5 +1,4 @@
 <script>
-    import 'davjhan-core/src/style.css'
     import { onMount } from 'svelte'
 
     onMount(() => {
