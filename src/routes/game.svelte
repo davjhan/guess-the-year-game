@@ -1,5 +1,5 @@
 <script context="module">
-    export const prerender = true;
+    export const prerender = true
 </script>
 <script lang="ts">
 	import { goto } from '$app/navigation'
@@ -24,7 +24,7 @@
 	let livesLost = 0
 	let guess = 1950
 	$: question = questions[round]
-
+	let livesAnimationTimeout, nextButton
 	onMount(() => {
 		enterState()
 	})
@@ -54,16 +54,24 @@
 	function enterState() {
 		switch (state) {
 			case 'guess':
+				clearTimeout(livesAnimationTimeout)
+				animatedLives.set(lives)
 				break
 			case'review':
-				console.log(`year`, question)
 				livesLost = Math.abs(question.year - guess)
 				lives = Math.max(0, lives - (livesLost))
-				setTimeout(() => animatedLives.set(lives), 2500, {
-					duration: livesLost * 50
-				})
+				if (lives === 0) {
+					nextButton.style.visibility = 'hidden'
+				}
+				livesAnimationTimeout = setTimeout(() => {
+					animatedLives.set(lives), {
+						duration: livesLost * 50
+					}
+					if (lives === 0) {
+						nextButton.style.visibility = 'visible'
+					}
+				}, 2500)
 				break
-
 		}
 	}
 
@@ -144,7 +152,7 @@
         {/if}
     </div>
 
-    <button class='reg self-stretch mt-4' on:click={next}>
+    <button class='reg self-stretch mt-4' on:click={next} bind:this={nextButton}>
         {#if state === 'guess'}
             Confirm
         {:else if state === 'review'}
