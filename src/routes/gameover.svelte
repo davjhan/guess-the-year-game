@@ -6,7 +6,7 @@
     import { page } from '$app/stores'
 
     let score = atob($page.query.get('score'))
-    if (!score) goto('/')
+    if (!score || Number.isInteger(score)) goto('/')
     export let subPath
     const ranks = [
         { grade: 'So bad, it\'s good', atLeast: 0, description: 'It\'s hard to get a score this low on purpose.' },
