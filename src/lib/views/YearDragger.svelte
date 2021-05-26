@@ -68,7 +68,7 @@
                 <div class="border-b-2 border-black"></div>
             </div>
             <img alt='drag-handle' bind:this={dragHandle} class='drag absolute op-1.5 p-4 pt-2 select-none' draggable=false
-                 id='drag-handle' src='Drag Handle.svg'
+                 id='drag-handle' src='dragHandle.svg'
                  width='64px'
 
             />
