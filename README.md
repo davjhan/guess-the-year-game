@@ -9,6 +9,7 @@ Play the game here: [`Guess The Year Game`](https://guess-the-year.davjhan.com/)
 - [`Svelte Kit`](https://kit.svelte.dev/)
 - Tailwind CSS (JIT)
 - Netlify
+- Uses Plausible analytics (cookie-less)
 
 Generates a static app that is hosted on Netlify.
 
