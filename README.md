@@ -14,7 +14,9 @@ Generates a static app that is hosted on Netlify.
 
 # Get Started
 
-⚠️ This repo will not build by itself. It has a dependency on `davjhan-core` which is not published on npm.
+⚠️ This repo will not build out of the box. It has a dependency on [davjhan-core](https://github.
+com/davjhan/davjhan-core)
+which is not published on npm. If you want to build this project, follow the steps in that package's README.
 
 `davjhan-core` includes common tailwind styles, css, and components (e.g. Navbar) that will be reused between david 
 games. I use `yalc link davjhan-core` on my local machine so that it builds.

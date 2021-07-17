@@ -5,6 +5,7 @@ node_modules
 /functions
 .idea/*
 .yalc/*
+.yalc.lock
 # Local Netlify folder
 .netlify
 static/questions.json
